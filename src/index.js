@@ -1,10 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-import { SettingsProvider } from 'module-example/providers';
-import { withSettings } from 'module-example/hocs';
-// import { SettingsProvider } from './providers/settingsProvider';
-// import { withSettings } from './hocs/withSettings';
+import { SettingsProvider } from 'provider-example/supersonic';
+import { withSettings } from 'module-example';
 
 const Test = withSettings(({settings}) => {
   console.log('Test initiated', {settings})
